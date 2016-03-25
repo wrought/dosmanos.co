@@ -337,17 +337,18 @@ $(function() {
 
 	// scroll to next level - this should be merged with previous function
 	$('.btn-scroll').on('click', function ( e ) {
-		var href = $(this).attr('href');
+		var $parentLevel = $(this).closest('.level');
 		
-		if ( href.length ) {
-			var $target = $(href);
+		if ( ! $parentLevel.length ) {
+			$parentLevel = $('.level-hero');
 		}
 		
-		var target = $target.offset(),
+		var $nextLevel = $parentLevel.next('.level'),
+		target = $nextLevel.offset(),
 		target = target.top;
-		$('body,html').animate({scrollTop: target}, 700, "linear");
-
-		e.preventDefault();
+		if ( $nextLevel ) {
+			$('body,html').animate({scrollTop: target}, 700, "linear");
+		}
 
 	});
 	
