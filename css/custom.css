@@ -1,3 +1,7 @@
+a, a:hover {
+	color:#db4124;
+}
+
 .hero-home {
 	background-color:#db4124;
         background-image: url("../img/bg-tomatoes.png");

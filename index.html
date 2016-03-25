@@ -43,10 +43,10 @@
 						</div>
 					</div>
 					<div>
-						<a class="btn btn-prepend btn-launch-video" href="#contact">
+						<span class="btn btn-prepend contact-scroll">
 							<i class="prepended icon-append-envelope"></i>Contact
-						</a>
-						<span class="btn btn-prepend btn-scroll" href=".level">
+						</span>
+						<span class="btn btn-prepend btn-scroll">
 							<i class="prepended icon-prepend-arrow-right"></i>About
 						</span>
 					</div>
@@ -122,9 +122,9 @@
 			<img class=img-right-sprite src="img/v2/iphone-bg-lg.min.png" alt>
 			<div class="row mb-60 xs-mb-20">
 				<div class="col-sm-6 col-lg-offset-1 col-lg-5">
-					<h1 class="mb-20 xs-mb-10 heading color-dark heading-bordered xl-heading-outdent">Details</h1>
-					<h2 class="w-300 color-dark mb-10">All what you want in your phone</h2>
-					<p class=xs-mw>Now with Appi you have it on your fingertips.
+					<h1 class="mb-20 xs-mb-10 heading color-dark heading-bordered xl-heading-outdent">About Us</h1>
+					<h2 class="w-300 color-dark mb-10">Co-founders and member-owners</h2>
+					<p class=xs-mw><em>Dos Manos</em> means "Both Hands", but it's also short for <em>Dos <strong>Her</strong>manos</em>, or "Two Brothers"</p>
 				</div>
 			</div>
 
@@ -134,30 +134,30 @@
 
 			<div class="row mb-60 xs-mb-20">
 				<div class="col-sm-1 col-lg-offset-1">
-					<i class="icon icon-globe"></i>
+					<i class="icon glyphicon glyphicon-leaf"></i>
 				</div>
 				<div class="col-sm-4 col-md-3">
-					<h3 class="mb-15">Worldwide</h3>
-					<p class="smaller xs-mw">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+					<h3 class="mb-15">Francisco Jimenez</h3>
+					<p class="smaller xs-mw">Originally from Costa Rica, Francisco combines his experience of Latin American cuisine with his love of food from all over, which he has been preparing for over 30 years. Among his specialty skills is producing his own tropical vinegars such as banana, plantain, jackfruit, pineapple, and many others.
 				</div>
 			</div>
 
 			<div class="row mb-60 xs-mb-20">
 				<div class="col-sm-1 col-lg-offset-1">
-					<i class="icon icon-eye"></i>
+					<i class="icon glyphicon glyphicon-grain"></i>
 				</div>
 				<div class="col-sm-4 col-md-3">
-					<h3 class="mb-15">Privacy</h3>
-					<p class="smaller xs-mw">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+					<h3 class="mb-15">Matt Senate</h3>
+					<p class="smaller xs-mw">Matt fell in love with cooking at an early age. As a Californian, he was eventually introduced to the creative world of vegetarian and vegan food culture. He cooks animal products too, but his skills extend from learning to do more with less and to celebrate the whole spectrum of food and flavor.
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-1 col-lg-offset-1">
-					<i class="icon icon-bubble"></i>
+					<i class="icon glyphicon glyphicon-question-sign"></i>
 				</div>
 				<div class="col-sm-4 col-md-3">
-					<h3 class="mb-15">Social Integration</h3>
-					<p class="smaller xs-mw">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+					<h3 class="mb-15">Seeking New Members!</h3>
+					<p class="smaller xs-mw">As a small cooperative, compatibility means a lot. Let's collaborate and get to know one another. <a  class="contact-scroll">Contact us</a></p>
 				</div>
 			</div>
 		</div>
@@ -170,29 +170,20 @@
 
 			<form class=contact method=get action="/" accept-charset="UTF-8">
 
-				<div class="h2 mb-20">Available on the <br class=visible-xs-block> App Store</div>
-				<p class="mb-35">Enter your phone number and we’ll send a link to your iPhone
+				<div class="h2 mb-20">Contact Us</div>
+				<p class="mb-35">Share some details with us and we will get back to you as soon as possible.
 
-				<div class="btn-append dropdown-prepend">
-
-					<div class=dropdown>
-						<button class="btn btn-default dropdown-toggle" type="button" id="f1" data-toggle="dropdown" aria-expanded="true">
-						<span id=option-value-f1>US (+1)</span>
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" data-displaytarget="#option-value-f1" data-inputtarget=".f1-target" role="menu" aria-labelledby="f1">
-							<li role="presentation" data-placeholder="US ( +1)" data-value="1" class=disabled>US ( +1)</li>
-						</ul>
-					</div>
+				<div class="btn-append">
 
 					<!-- actual select here -->
-					<select name="country-code" class="sr-only f1-target countryCode">
-						<option selected value="1">US (+1)</option>
-					</select>
+					<form action="https://formspree.io/mattsenate@gmail.com" method="POST">
+						<input type="text" class="text" name="name" placeholder="Name">
+						<input type="email" class="text phoneNumber" name="_replyto" placeholder="Email address">
+						<input type="tel" class="text phoneNumber" name="tel" placeholder="Phone number">
+						<input type="text" class="text" name="message" placeholder="Brief message">
+						<input type="submit" class="submit appended" value="Send">
+					</form>
 
-					<input type=tel class="text phoneNumber" name="tel" placeholder="Phone number" required>
-
-					<input type=submit class="submit appended" value=submit>
 
 				</div>
 
@@ -202,10 +193,13 @@
 
 	</div>
 	<div class="footer text-center">
-	<p class="fmenu">
+
+		<div class="copyright"><!--[if lte IE 8]><span style="filter: FlipH; -ms-filter: "FlipH"; display: inline-block;"><![endif]--><span style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;">©</span><!--[if lte IE 8]></span><![endif]--> CopyLeft <a href="http://dosmanos.co/"><abbr>DosManos.co</abbr></a> All Wrongs Reversed, <script type="text/javascript">var d = new Date(); var year = d.getFullYear(); document.write(year);</script>.</div>
+
+<!--	<p class="fmenu">
 		<a href="index.html">HOME</a> | <a href="about.html">ABOUT</a>
 	</p>
-
+-->
 	</div>	
 
 	
