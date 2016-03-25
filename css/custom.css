@@ -1,3 +1,7 @@
+.hero-careers > .container {
+	background-image: none;
+}
+
 a, a:hover {
 	color:#db4124;
 }
