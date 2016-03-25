@@ -1,3 +1,28 @@
+body, input, select, button {
+	color: #444;
+}
+
+input.text {
+	color: #444;
+	border-color: #999;
+}
+
+::-webkit-input-placeholder {
+   color: #999;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #999;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #999;
+}
+
+:-ms-input-placeholder {  
+   color: #999;
+}
+
 .hero-careers > .container {
 	background-image: none;
 }
