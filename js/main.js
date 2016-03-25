@@ -351,6 +351,17 @@ $(function() {
 		}
 
 	});
+
+	// scroll to next level - this should be merged with previous function
+	$('.contact-scroll').on('click', function ( e ) {
+		var $contact = $( "body > div.level.level-outro.text-center > div > form.contact" )
+		target = $contact.offset(),
+		target = target.top;
+		if ( $contact ) {
+			$('body,html').animate({scrollTop: target}, 700, "linear");
+		}
+
+	});
 	
 	// colophon date 
 	var d = new Date(),
