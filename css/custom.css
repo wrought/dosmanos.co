@@ -36,8 +36,10 @@ a, a:hover {
         background-image: url("../img/bg-tomatoes.png");
 }
 
-.hero-home .btn-prepend + .btn-prepend {
-	margin: 0 0 0 4px;
+@media ( min-width: 768px ) {
+	.hero-home .btn-prepend + .btn-prepend {
+		margin: 0 0 0 4px;
+	}
 }
 
 .heading-bordered:before {
@@ -52,10 +54,10 @@ a, a:hover {
 	color: #db4124;
 }
 
-.hero-home .btn-prepend .icon-append-envelope {
+.icon-append-envelope {
         background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2232%22%20height%3D%2222%22%20viewBox%3D%220%200%2032%2022%22%3E%0D%0A%3Cpath%20fill%3D%22%23222%22%20d%3D%22M31.981%2C2.225c0.022-0.171%2C0-0.342-0.067-0.505C31.673%2C0.585%2C30.869%2C0%2C29.5%2C0h-26%0D%0AC2.292%2C0%2C0.992%2C0.454%2C0.373%2C1.34C0.331%2C1.375%2C0.281%2C1.396%2C0.244%2C1.439C0.037%2C1.678-0.021%2C1.985%2C0.032%2C2.274%0D%0AC0.023%2C2.351%2C0%2C2.42%2C0%2C2.5v16C0%2C20.156%2C1.843%2C22%2C3.5%2C22h26c1.657%2C0%2C2.5-1.844%2C2.5-3.5v-16C32%2C2.402%2C31.987%2C2.317%2C31.981%2C2.225z%0D%0AM3.5%2C2H29h0.5c0.006%2C0%2C0.007%2C0%2C0.013%2C0L16%2C12.771L2.542%2C2.044C2.848%2C1.988%2C3.224%2C2%2C3.5%2C2z%20M29.5%2C20h-26C2.949%2C20%2C2%2C19.053%2C2%2C18.5%20V4.173L15.345%2C14.85c0.188%2C0.162%2C0.421%2C0.244%2C0.655%2C0.244s0.467-0.082%2C0.655-0.244L30%2C4.174V18.5C30%2C19.053%2C30.052%2C20%2C29.5%2C20z%22/%3E%0D%0A%3C/svg%3E%0D%0A");
 }
 
-.hero-home .btn-prepend .icon-prepend-arrow-right {
+.icon-prepend-arrow-right {
 	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%0D%0A%3Ccircle%20fill%3D%22%23222%22%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2216%22/%3E%0D%0A%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M17.3%2C10.7l5.5%2C5c0%2C0%2C0%2C0%2C0%2C0c0%2C0%2C0%2C0%2C0%2C0c0%2C0%2C0%2C0%2C0%2C0%0D%0A%09c0.1%2C0.1%2C0.1%2C0.2%2C0.1%2C0.3c0%2C0%2C0%2C0%2C0%2C0c0%2C0%2C0%2C0%2C0%2C0c0%2C0%2C0%2C0%2C0%2C0c0%2C0%2C0%2C0%2C0%2C0c0%2C0.1%2C0%2C0.2-0.1%2C0.3c0%2C0%2C0%2C0%2C0%2C0.1c0%2C0%2C0%2C0-0.1%2C0%0D%0A%09c0%2C0%2C0%2C0%2C0%2C0l-5.4%2C4.9c-0.2%2C0.2-0.5%2C0.2-0.7%2C0c-0.2-0.2-0.2-0.5%2C0-0.7l4.6-4.2H9.5C9.2%2C16.5%2C9%2C16.3%2C9%2C16s0.2-0.5%2C0.5-0.5h11.7%0D%0A%09l-4.6-4.2c-0.2-0.2-0.2-0.5%2C0-0.7C16.8%2C10.5%2C17.1%2C10.5%2C17.3%2C10.7z%22/%3E%0D%0A%3C/svg%3E%0D%0A');
 }
