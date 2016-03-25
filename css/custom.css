@@ -7,6 +7,10 @@ a, a:hover {
         background-image: url("../img/bg-tomatoes.png");
 }
 
+.hero-home .btn-prepend + .btn-prepend {
+	margin: 0 0 0 4px;
+}
+
 .heading-bordered:before {
 	background-color: #db4124;
 }
